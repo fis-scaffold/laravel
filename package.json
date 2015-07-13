@@ -1,0 +1,30 @@
+{
+  "name": "fisLaravelScaffold",
+  "version": "1.0.0",
+  "description": "laravel project template for fis3 scaffold",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fis-scaffold/laravel.git"
+  },
+  "keywords": [
+    "fis",
+    "scaffold",
+    "laravel",
+    "blade"
+  ],
+  "author": "fis",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/fis-scaffold/laravel/issues"
+  },
+  "homepage": "https://github.com/fis-scaffold/laravel",
+  "dependencies": {
+    "fis3-hook-module": "^1.0.0",
+    "fis-parser-utc": "0.0.2",
+    "fis3-preprocessor-extlang": "^1.0.2"
+  }
+}
