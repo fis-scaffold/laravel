@@ -1,5 +1,5 @@
 # laravel
-后端为 Laravel 的 FIS 项目模板
+后端为 Laravel 的 FIS 项目模板。 为了能让此项目运行，请先后端安装 [laravel-fis](https://github.com/fex-team/laravel-fis) 插件
 
 
 ## 安装 fis3
@@ -32,6 +32,10 @@ $ fis3 release -d /path/of/your/laravel/app
 $ fis3 release prod -d /path/of/your/laravel/app
 ```
 
-## 扩展 blade 语法说明
+## 扩展 [blade](http://laravel.com/docs/5.0/templates) 语法说明
 
+
+### @require
+
+用来引用 fis 资源，支持相对路径或者绝对路径（相对与项目根目录）。
 
