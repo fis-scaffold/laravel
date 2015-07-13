@@ -1,4 +1,4 @@
-@extends('/widget/layout/front.blade.php')
+@extends('/widget/layout/2-cols-with-left.blade.php')
 
 @section('title', '关于')
 @section('content')
