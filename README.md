@@ -1,6 +1,6 @@
 # laravel
-后端为 Laravel 的 FIS 项目模板。 为了能让此项目运行，请先后端安装 [laravel-fis](https://github.com/fex-team/laravel-fis) 插件
 
+基于 laravel  的 fis3 解决方案。
 
 ## 安装 fis3
 
@@ -18,7 +18,9 @@ $ fis3 init laravel
 
 ## 运行 & 预览
 
-开启 laravel 服务后，直接把该项目产出到 laravel 项目。
+开启 laravel 服务后，直接把该项目产出到 laravel 项目里面。
+
+注意：laravel app 里面请先安装[laravel-fis](https://github.com/fex-team/laravel-fis) 插件，用来加载由 fis 产出的资源。
 
 ```bash
 $ fis3 release -d /path/of/your/laravel/app
