@@ -75,7 +75,7 @@ laravel 方案中的做法是，将资源信息写在 `map.json` 文件中，让
 @require('/static/css/xxx.css')
 ```
 
-#### @script(url?, prefix?, affix?)@endscript
+#### @script(url|id?, prefix?, affix?)@endscript
 
 用来引入 js 文件或者，内嵌 js。与 `@require` 不同的时，此标签除了 `资源ID` 外，还支持外部 url。
 
