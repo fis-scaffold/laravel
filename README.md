@@ -56,6 +56,11 @@ laravel 解决方案中用的插件跟其他项目差不多，唯一不同的就
 
 laravel 方案中的做法是，将资源信息写在 `map.json` 文件中，让后端运行时去加载。
 
+另外，[extlang](https://github.com/fex-team/fis3-preprocessor-extlang) 中主要的编译工作如下：
+
+1. 让 `@require(path)` 、`@widget(path)`、`@url(path)`、`@extends(path)` 和 `@framework(path)` 支持相对路径或者绝对路径。
+2. to be continued..
+
 ### 扩展的 [blade](http://laravel.com/docs/5.0/templates) 语法说明
 
 
