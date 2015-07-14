@@ -59,7 +59,8 @@ laravel 方案中的做法是，将资源信息写在 `map.json` 文件中，让
 另外，[extlang](https://github.com/fex-team/fis3-preprocessor-extlang) 中主要的编译工作如下：
 
 1. 让 `@require(path)` 、`@widget(path)`、`@url(path)`、`@extends(path)` 和 `@framework(path)` 支持相对路径或者绝对路径。
-2. to be continued..
+2. 识别 `@style() @endstyle` 和 `@script() @endscript`，让内容支持对应的语言能力。
+3. 在适当的位置插入 `@section('fis_resource')` 用来支持后端自动收集模板中依赖的资源。
 
 ### 扩展的 [blade](http://laravel.com/docs/5.0/templates) 语法说明
 
