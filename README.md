@@ -95,11 +95,31 @@ alert('Hello World!');
 #### @style(url?, prefix?, affix?)@endstyle
 请参考 `@script` 说明
 
-### @widget(id, data?)
+#### @widget(id, data?)
 
 widget 可以理解成页面的一部分，为了公用或者方便维护被拆分成页面片段。
 
 被拆分的片段，可以通过 @widget(id) 引入进来，等价与 @include。
+
+#### @uri(id)
+
+输出指定资源的 url 地址。
+
+### @url(id)
+
+返回指定资源的 url 地址，可以选择输出，或者复制。
+
+```
+{{ @url('/static/js/mod.js') }}
+
+{{-- 等价于 --}}
+@uri('/static/js/mod.js')
+
+{?
+$varA = $condition ? @url('/static/js/a.js') : @url('/static/js/b.js');
+?}
+{{ $varA }}
+```
 
 #### @framework(id)
 
@@ -112,5 +132,5 @@ fis 收集的资源，最终吐出在什么位置，完全是靠 `placeholder` �
 - `@placeholder('framework')` 输出前端框架 js.
 - `@placeholder('styles')` 输出收集的 css.
 - `@placeholder('scripts')` 输出收集的 js.
-- `@placeholder('framework_config')` 输出异步依赖的`模块化资源映射表`。可选，因为当没有设置时，会自动在 `@placeholader('scripts')`z中包含。
+- `@placeholder('framework_config')` 输出异步依赖的`模块化资源映射表`。可选，因为当没有设置时，会自动在 `@placeholader('scripts')`中包含。
 - `@placeholder('framework_config_with_script')` 与 `@placeholder('framework_config')` 不同的是，这个会把内容用 `<script>` 包起来
