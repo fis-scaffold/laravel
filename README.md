@@ -65,7 +65,7 @@ alert('Hello World!');
 ### @style(url?, prefix?, affix?)@endstyle
 请参考 `@script` 说明
 
-### @widget(id)
+### @widget(id, data?)
 
 widget 可以理解成页面的一部分，为了公用或者方便维护被拆分成页面片段。
 
