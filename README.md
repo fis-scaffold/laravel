@@ -130,6 +130,7 @@ $varA = $condition ? @url('/static/js/a.js') : @url('/static/js/b.js');
 
 设置前端框架，也可以说是设置`前端模块化加载器`，可以是满足 commonJs 规范的 `mod.js` 或者 AMD 规范的 `require.js`、`esl.js` 等。
 
+
 #### @placeholder(type)
 
 fis 收集的资源，最终吐出在什么位置，完全是靠 `placeholder` 来控制的。
