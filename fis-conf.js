@@ -2,8 +2,7 @@
 fis.set('project.files', ['*.blade.php', 'map.json']);
 
 // 采用 commonJs 规范支持模块化组建开发
-fis.hook('module', {
-  mode: 'commonJs',
+fis.hook('commonJs', {
   packages: [
 
     // 短路径支持
