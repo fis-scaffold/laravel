@@ -18,13 +18,13 @@ fis.hook('module', {
 // 默认认为所有的资源都是静态资源，放在 /public 目录下面
 fis.match('**', {
   release: '/public/$0',
-  url: '/$0'
+  url: '$0'
 });
 
 // static 下面本来就是静态资源，去掉多出来的一层目录。
 fis.match('/static/(**)', {
   release: '/public/$1',
-  url: '/$1'
+  url: '$1'
 });
 
 fis.match('*.blade.php', {
