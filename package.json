@@ -25,6 +25,6 @@
   "dependencies": {
     "fis3-hook-commonjs": "0.1.0",
     "fis-parser-utc": "0.0.2",
-    "fis3-preprocessor-extlang": "1.0.6"
+    "fis3-preprocessor-extlang": "1.0.8"
   }
 }
