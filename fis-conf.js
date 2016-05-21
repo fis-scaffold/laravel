@@ -1,8 +1,8 @@
 // 按需编译，只编译用到的资源
 fis.set('project.files', ['*.blade.php', 'map.json']);
 
-// 采用 commonJs 规范支持模块化组建开发
-fis.hook('commonJs', {
+// 采用 commonjs 规范支持模块化组建开发
+fis.hook('commonjs', {
   packages: [
 
     // 短路径支持
